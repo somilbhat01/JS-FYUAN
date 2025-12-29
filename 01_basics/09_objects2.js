@@ -65,5 +65,48 @@ console.log(users[1].email); // accessing email of second object in users array
 // console.log(Object.entries(tinderUser)); // to get all the entries of an object in form of array of arrays // each array contains key and value pair // i dont like this method much
 
 
-console.log(tinderUser.hasOwnProperty("name")); // to check if a key is present in an object or not
-console.log(tinderUser.hasOwnProperty("age")); // to check if a key is present in an object or not
+// console.log(tinderUser.hasOwnProperty("name")); // to check if a key is present in an object or not
+// console.log(tinderUser.hasOwnProperty("age")); // to check if a key is present in an object or not
+
+
+
+const course ={
+  coursename: "JavaScript",
+  price: 999,
+  courseInstructor: "Joy Boy" 
+}
+//course.courseInstructor
+const {courseInstructor} = course; // destructuring object
+console.log(courseInstructor); // accessing courseInstructor using destructuring
+
+//YOU CAN ALSO RENAME THE VARIABLE WHILE DESTRUCTURING
+const {courseInstructor: instructor} = course;
+console.log(instructor); // accessing courseInstructor using destructuring with renaming
+
+
+
+// React JS EXAMPLE
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "Joy Boy"); // default parameter in function
+
+// console.log(company); // accessing company variable which is declared in function parameter with default value
+
+
+
+// {  "name" : "Joy Boy"
+//   "coursename" : "JavaScript",
+//   "price" : 999,
+// }
+
+
+[
+{}, 
+{},
+{}
+]
+
+
+
