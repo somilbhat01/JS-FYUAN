@@ -30,13 +30,14 @@
 
 
 //slice and splice
+
 console.log("A",myArr);
-const myna1 = myArr.slice(1,3); // does not modify the original array
+const myn1 = myArr.slice(1,3);
+console.log(myn1);
 
-console.log(myna1);
 console.log("B",myArr);
+const myn2 = myArr.splice(1,3);
+console.log(myn2);
 
-const myna2 = myArr.splice(1,3); // modifies the original array
-console.log("c",myArr);
-console.log(myna2);
-
+console.log("C",myArr);
+console.log(myn2);
